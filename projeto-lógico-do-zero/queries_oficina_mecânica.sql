@@ -87,3 +87,12 @@ values(1, 'Toyota','preto', '2018',default, 'HDK4598'),
 (3, 'Chevrolet','vermelho', '2022',default, 'FDK45675');
 
 select * from veiculos;
+
+
+select count(*) from clientes;
+
+select * from clientes c, pedidos p where c.idCliente = idPedido;
+
+select * from clientes c, pedidos p where c.idCliente = idPedido_Cliente;
+
+select * from clientes left outer join pedidos ON idCliente = idPedido_Cliente;
